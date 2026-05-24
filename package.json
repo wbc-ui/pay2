@@ -1,0 +1,56 @@
+{
+  "name": "@wbc-ui/pay2",
+  "version": "1.0.0-r08",
+  "description": "Support-hub payment component for the @wbc-ui ecosystem — renders a provider grid with fiat + crypto tiles, expansion panels, and clipboard-copy for on-chain addresses",
+  "author": "Wissem Boughamoura <wissemb11@gmail.com> (https://www.wi-bg.com)",
+  "homepage": "https://pay.wbc-ui.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbc-ui/pay2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wbc-ui/pay2/issues"
+  },
+  "main": "dist/pay2.umd.js",
+  "module": "dist/pay2.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pay2.es.js",
+      "require": "./dist/pay2.umd.js"
+    },
+    "./dist/*": "./dist/*"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "vue": "^2.7.16",
+    "vuetify": "^2.7.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "payment",
+    "payments",
+    "crypto",
+    "stripe",
+    "paypal",
+    "bitcoin",
+    "ethereum",
+    "solana",
+    "wbc-ui",
+    "support-hub",
+    "donation",
+    "tipping"
+  ]
+}
