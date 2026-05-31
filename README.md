@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/wbc-ui/pay2/main/logo/wb-pay.svg" alt="@wbc-ui/pay2" width="220"/>
+  <img src="https://cdn.jsdelivr.net/npm/@wbc-ui/pay2/logo/wb-pay.svg" alt="@wbc-ui/pay2" width="220" style="max-width: 100%;"/>
 </p>
 
 <p align="center">
@@ -15,14 +15,14 @@
 </p>
 
 <p align="center">
-  <a href="https://pay.wbc-ui.com">📘 Docs</a> ·
+  <a href="https://pay2.wbc-ui.com">📘 Docs</a> ·
   <a href="https://github.com/wbc-ui/pay2">🐙 GitHub</a> ·
-  <a href="https://pay.wbc-ui.com/lab">▶️ Playground</a> ·
+  <a href="https://pay2.wbc-ui.com/lab">▶️ Playground</a> ·
   <a href="https://wbc-ui.com">💎 Pro</a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/wbc-ui/pay2/main/assets/hero-pay-grid.svg"
+  <img src="https://cdn.jsdelivr.net/npm/@wbc-ui/pay2/assets/hero-pay-grid.svg"
        alt="@wbc-ui/pay2 — pass providers JSON, render a live fiat + crypto support hub"
        width="780"/>
 </p>
@@ -151,11 +151,11 @@ const PAYMENT_PROVIDERS = [
 ## 🚀 Try it in 30 seconds
 
 ```bash
-# Sandbox playground at pay.wbc-ui.com (live interactive lab — paste any providers JSON, see it render)
-open https://pay.wbc-ui.com/lab
+# Sandbox playground at pay2.wbc-ui.com (live interactive lab — paste any providers JSON, see it render)
+open https://pay2.wbc-ui.com/lab
 ```
 
-> While a starter template is being finalized, the easiest way to explore the component is the live demo at **[pay.wbc-ui.com](https://pay.wbc-ui.com)** — paste your own `PAYMENT_PROVIDERS` array, see the grid render in real time, copy the integration snippet back to your project.
+> While a starter template is being finalized, the easiest way to explore the component is the live demo at **[pay2.wbc-ui.com](https://pay2.wbc-ui.com)** — paste your own `PAYMENT_PROVIDERS` array, see the grid render in real time, copy the integration snippet back to your project.
 
 ---
 
@@ -236,14 +236,14 @@ import { WbPayHub } from '@wbc-ui/pay2';
 | Crypto tile clipboard-copy silently fails | Browser blocks clipboard write outside a user-gesture context | Confirm the copy is triggered from a click handler; check console for `NotAllowedError`. |
 | Hero gradient doesn't apply | `branding.heroGradient` value rejected by Vuetify | Pass a CSS-valid linear-gradient string starting with `linear-gradient(...)` — not a hex color. |
 
-For a longer walkthrough with worked examples, see the documentation hub at [pay.wbc-ui.com](https://pay.wbc-ui.com).
+For a longer walkthrough with worked examples, see the documentation hub at [pay2.wbc-ui.com](https://pay2.wbc-ui.com).
 
 ---
 
 ## ⚡ The Component Under the Hood
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/wbc-ui/pay2/main/assets/component-flow.svg" alt="@wbc-ui/pay2 component flow" width="780"/>
+  <img src="https://cdn.jsdelivr.net/npm/@wbc-ui/pay2/assets/component-flow.svg" alt="@wbc-ui/pay2 component flow" width="780"/>
 </p>
 
 <details>
@@ -296,7 +296,7 @@ flowchart TD
 
 This is the **whole** Pro lane today. Maintainer review of additional Pro candidates is tracked in [packages/wb-pay/guides/monetize/](../guides/monetize/) — if you want a feature gated (or, more commonly, want a Pro feature *un*gated), open an issue.
 
-👉 **[Monetization guide →](../guides/monetize/)** · **[Buy Pro (planned) →](https://wbc-ui.com/pricing)**
+👉 **[Monetization guide →](../guides/monetize/)** · **[Buy Pro (planned) →](https://pay2.wbc-ui.com/pricing)**
 
 ---
 
@@ -312,7 +312,6 @@ This is the **whole** Pro lane today. Maintainer review of additional Pro candid
 | [`@wbc-ui/dataviewer2`](https://www.npmjs.com/package/@wbc-ui/dataviewer2) | JSON / data-table explorer | 🟢 GA |
 | [`@wbc-ui/latex2`](https://www.npmjs.com/package/@wbc-ui/latex2) | LaTeX math rendering | 🟢 GA |
 | [`@wbc-ui/mermaid2`](https://www.npmjs.com/package/@wbc-ui/mermaid2) | Diagram-as-code rendering | 🟢 GA |
-| [`@wbc-ui/gis2`](https://www.npmjs.com/package/@wbc-ui/gis2) | Leaflet map integration | 🟢 GA |
 | [`@wbc-ui/alert2`](https://www.npmjs.com/package/@wbc-ui/alert2) | Notification / toast system | 🟢 GA |
 | [`@wbc-ui/press2`](https://www.npmjs.com/package/@wbc-ui/press2) | Markdown-driven docs engine | 🟢 GA |
 | **[`@wbc-ui/pay2`](https://www.npmjs.com/package/@wbc-ui/pay2)** | **Fiat + crypto support hub component** *(this package)* | 🟢 GA |

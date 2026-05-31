@@ -290,12 +290,13 @@ const r = [
     output: { type: [Array, String], default: () => ["stripe-checkout"] },
     pattern: {
       type: Function,
-      default: (e, t) => ({
-        default_0: "<~VCard,grey pa-5>",
-        default_1: `h5__${e.label} | pa-1 text-h6 font-weight-bold | ${e.url || ""}`,
-        default_2: `div__${e.description} | body-2 mb-2`,
-        default_3: t
-      })
+      default: (e, t) => {
+        const i = {
+          default_0: "<~VCard,grey pa-5>",
+          default_1: `h5__${e.label} | pa-1 text-h6 font-weight-bold`
+        };
+        return e.url && (i.default_1 += ` | ${e.url}`), e.description && (i.default_2 = `div__${e.description} | body-2 mb-2`), i.default_3 = t, i;
+      }
     },
     providers: { type: Array, default: () => r },
     recipientInfo: { type: Object, default: () => ({}) },
