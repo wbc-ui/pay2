@@ -1,6 +1,6 @@
 {
   "name": "@wbc-ui/pay2",
-  "version": "1.0.0-r15",
+  "version": "1.0.0-r16",
   "description": "Support-hub payment component for the @wbc-ui ecosystem — renders a provider grid with fiat + crypto tiles, expansion panels, and clipboard-copy for on-chain addresses",
   "main": "dist/pay2.umd.js",
   "module": "dist/pay2.es.js",

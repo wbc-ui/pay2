@@ -94,7 +94,7 @@ A **Vue 2.7+ component** that renders a polymorphic payment-provider grid from a
 
 ---
 
-## Teasing Examples
+## Usage Examples
 
 ### Level 1 — Single fiat tile
 ```javascript
@@ -248,27 +248,11 @@ For a longer walkthrough with worked examples, see the documentation hub at [pay
 
 <details>
 <summary>Mermaid diagram (interactive fallback)</summary>
-<div align="center">
-
-```mermaid
-flowchart TD
-    Data("Host array<br>(PaymentProvider[])") --> Hub["&lt;WbPayHub :providers='...' /&gt;"]
-    Hub --> Detect{"Detect provider type"}
-
-    Detect -- "kind:commercial / tip / sponsorship" --> FiatTile[FiatTile]
-    Detect -- "address.*" --> CryptoTile[CryptoTile]
-
-    FiatTile  -- click --> OpenURL["window.open(url)<br>emit('transaction-intent')<br>emit('provider-opened')"]
-    CryptoTile -- click --> CopyAddr["navigator.clipboard.writeText(addr)<br>emit('provider-opened')"]
-
-    FiatTile & CryptoTile --> Panel{"Has steps[] or<br>requirements[]?"}
-    Panel -- yes --> Expand["VExpansionPanel"]
-    Panel -- no  --> Static["static tile"]
-
-    Expand & Static --> Render(("Rendered grid"))
-```
-
-</div>
+<p align="center">
+  <img src="./assets/mermaid-architecture.png"
+       alt="Architecture diagram"
+       width="680"/>
+</p>
 </details>
 
 - **Polymorphic dispatch**: tiles dispatch on `kind` (fiat) vs presence of `address.*` (crypto) — no separate components to register
